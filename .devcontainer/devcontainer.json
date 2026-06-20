@@ -1,0 +1,13 @@
+{
+  "name": "termin-dashboard",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "onCreateCommand": "cd frontend && npm install",
+  "postAttachCommand": "cd frontend && npm run dev",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Termin-Dashboard",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
